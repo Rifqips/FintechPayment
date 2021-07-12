@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FintechPayment</string>
+    <string name="History">History</string>
+    <string name="Payment">Payment</string>
+    <string name="Setting">Setting</string>
+    <string name="Home">Home</string>
+    <string name="Camera">Camera</string>
+</resources>

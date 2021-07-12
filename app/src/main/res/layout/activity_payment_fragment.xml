@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:buttontintandroid="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.PaymentFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/camera"
+        app:menu="@menu/camera_menu"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        buttontintandroid:title="BayarDulu"
+        buttontintandroid:titleTextColor="#fff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Scan here"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="50dp"
+                    />
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_margin="10sp"
+                    android:columnCount="2"
+                    android:paddingTop="0dp"
+                    android:rowCount="5"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="26dp"
+                    tools:layout_editor_absoluteY="26dp">
+
+                    <ImageView
+                        android:id="@+id/button1"
+                        android:layout_width="293dp"
+                        android:layout_height="230dp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/rounded_bg"
+                        android:padding="15dp"
+                        android:src="@drawable/brcd" />
+
+                </GridLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="or input your code payment"
+                            android:gravity="center"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/here"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Here"
+                            android:textColor="#81d8d0"
+                            android:gravity="center"
+                            android:textSize="15dp"/>
+
+</LinearLayout>
